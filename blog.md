@@ -267,37 +267,15 @@ To test the searches beyond the primary lab, I applied the dashboard approach to
 
 The dashboard evidence showed EternalBlue activity from `192.168.18.222` to `192.168.18.208`, VBScript-related persistence activity, and a Meterpreter-related session using port `4444`. The report did not identify credential-dumping data in this particular dashboard dataset, even though LSASS access had been observed in the separate Phase 2 investigation.
 
-### Sunpreet dataset
 
-![Wazuh dashboard for Sunpreet dataset](images/14-dashboard-sunpreet-dataset.png)
+### Modified dataset
 
-*Figure 14. Wazuh dashboard findings for the Sunpreet dataset.*
+![Wazuh dashboard for Modified dataset](images/15-dashboard-abdul-dataset.png)
 
-The available data was insufficient to identify relevant activity or indicators. This is not proof that no suspicious activity occurred; it means the available telemetry did not support a finding.
-
-### Abdul dataset
-
-![Wazuh dashboard for Abdul dataset](images/15-dashboard-abdul-dataset.png)
-
-*Figure 15. Wazuh dashboard findings for the Abdul dataset.*
+*Figure 15. Wazuh dashboard findings for the Modified dataset.*
 
 The dataset showed EternalBlue activity between `192.168.1.160` and `192.168.1.208`, VBScript-related persistence, LSASS-related credential-access evidence, and a Meterpreter-related session using port `4444`.
 
-### Mahdi dataset
-
-![Wazuh dashboard for Mahdi dataset](images/16-dashboard-mahdi-dataset.png)
-
-*Figure 16. Wazuh dashboard findings for the Mahdi dataset.*
-
-The dashboard showed EternalBlue activity between `192.168.2.160` and `192.168.2.208`, VBScript-related persistence, and a Meterpreter-related session using port `8443`. The available records did not show credential-dumping activity.
-
-### Adesina dataset
-
-![Wazuh dashboard for Adesina dataset](images/17-dashboard-adesina-dataset.png)
-
-*Figure 17. Wazuh dashboard findings for the Adesina dataset.*
-
-The dataset showed EternalBlue activity between `192.168.10.210` and `192.168.10.208`. The available evidence did not show VBScript execution or credential-dumping activity. An external network connection was present, but the relevant fields did not contain enough detail for further analysis.
 
 ### Cross-dataset observations
 
